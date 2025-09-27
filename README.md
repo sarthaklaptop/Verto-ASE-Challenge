@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Employee Directory Management
 
-## Getting Started
+**Live Demo:** [https://your-live-project-link.com](https://your-live-project-link.com)
 
-First, run the development server:
+A simple web application to manage employee data. Users can **view, add, edit, delete, and search employees** efficiently. Built with **Next.js, TypeScript, ShadCN UI components, and React Hot Toast** for notifications.
 
+---
+
+## Features
+
+- View a table of employees with name, email, position, and join date.  
+- Add a new employee using a modal dialog form.  
+- Edit employee details inline via modal dialogs.  
+- Delete employees with confirmation dialogs.  
+- Search/filter employees by name.  
+- Toast notifications for all CRUD actions.  
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js 13, TypeScript, ShadCN UI components  
+- **Backend:** Next.js API routes, Prisma (with SQLite/PostgreSQL)  
+- **Notifications:** react-hot-toast  
+- **Form Validation (optional):** Zod  
+
+---
+
+## Setup & Running Locally
+
+1. **Clone the repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/employee-directory.git
+cd employee-directory
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
+```bash 
+npm install
+```
+3. **Set up the database**
+```bash 
+npx prisma migrate dev
+```
+- Configure your .env file with your database URL.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Run the development server**
+```bash 
+npm run dev
+```
+- Open http://localhost:3000
+ to view the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Assumptions & Design Choices
+- Employee records have name, email, position, and createdAt.
 
-## Learn More
+- All CRUD operations are handled via Next.js API routes.
 
-To learn more about Next.js, take a look at the following resources:
+- Used ShadCN UI components for clean and consistent UI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Toast notifications provide feedback on all actions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Dialog modals are used for adding, editing, and deleting employees.
 
-## Deploy on Vercel
+- Search/filter implemented on the frontend for quick lookups.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Video Walkthrough (Bonus)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ### [Watch the video explanation](https://www.loom.com/share/your-video-link)
+
+- Demonstrates the project flow, design decisions, and implementation.
+
