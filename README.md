@@ -1,6 +1,6 @@
 # Employee Directory Management
 
-**Live Demo:** [https://your-live-project-link.com](https://your-live-project-link.com)
+**Live Demo:** [https://verto-ase-challenge-72pj.vercel.app/](https://verto-ase-challenge-72pj.vercel.app/com)
 
 A simple web application to manage employee data. Users can **view, add, edit, delete, and search employees** efficiently. Built with **Next.js, TypeScript, ShadCN UI components, and React Hot Toast** for notifications.
 
