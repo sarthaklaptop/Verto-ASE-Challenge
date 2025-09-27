@@ -9,7 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import {
   Dialog,
   DialogTrigger,
@@ -258,7 +258,7 @@ export default function Home() {
                         <DialogHeader>
                           <DialogTitle>Edit Employee Details</DialogTitle>
                           <DialogDescription>
-                            Update the employee's name, email, or position.
+                            Update the employees name, email, or position.
                           </DialogDescription>
                           <form
                             onSubmit={(e) => handleUpdateEmployee(e, emp.id)}

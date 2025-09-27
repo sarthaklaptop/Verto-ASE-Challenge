@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { z } from "zod";
 
@@ -24,7 +24,7 @@ export async function GET() {
 }
 
 // POST /api/employees → create new employee
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const parsed = employeeSchema.safeParse(body);
@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json(employee, { status: 201 });
-  } catch (error: any) {
+  } catch (error) {
     if (error.code === "P2002" && error.meta?.target?.includes("email")) {
       return NextResponse.json(
         { error: "Email already in use" },
