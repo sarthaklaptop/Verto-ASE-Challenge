@@ -66,7 +66,7 @@ npm run dev
 
 ## Video Walkthrough (Bonus)
 
-- ### [Watch the video explanation](https://www.loom.com/share/your-video-link)
+- ### [Watch the video explanation]([https://www.loom.com/share/your-video-link](https://www.loom.com/share/e7a0cef122b94ffcade12c572a03e60a?sid=9ea851ef-9dcf-42d0-9183-7ab5edbea11b))
 
 - Demonstrates the project flow, design decisions, and implementation.
 
